@@ -5,21 +5,45 @@ title: Pax Exam 2 Status Update
 
 h1. {{ page.title }}
 
-p(meta). August 2010 - Chatham, USA / Hannover, Germany
+p(meta). August 2010 - Chatham, USA
 
-h2. Foreword
+h2. Some history
 
-"OPS4J":http://ops4j.org is a well known Open Source community site with more than 100 committers over 15 projects. In 2008 a new project in the so called "pax" stack opened its gates: Pax Drone. 
+"OPS4J":http://ops4j.org is a well known Open Source community site with more than 100 committers over 15 projects. 
+In 2008 a new project in the so called "pax" stack opened its gates: Pax Drone. 
 
-h2. Pax Exam 2 vs. Exxam
+It built to let us use "Pax Runner":http://paxrunner.ops4j.org right inside a JUnit Instance and let tests being wrapped into an "on-the-fly" bundle, so they can be injected and accessed inside this "Pax Runner":http://paxrunner.ops4j.org container.
+The Term "Drone" referes to the thing that is being made out of your test. It is a "drone" inside a configured (started and stopped while JUNit runs) system.
+
+Soon after, early 2009, the project was being renamed to "Pax Exam":http://paxexam.ops4j.org in order to step back from the technical detail (though it is still true) and clarify its testing purpose.
+
+The latest Pax Exam Release is 1.2.1.
+
+h2. Early Pax Exam 2 Plan
+
+In winter of 2009/2010 i chose to cut the current trunk (at time of the 1.2.0 release) in order to start working on greater overhaul on GitHub.
+Technical reasons for cutting a 2.0.. instead of lets say a 1.3 are (amongst others):
+* Current implementation is tight too much to JUnit4
+* TestContainer abstraction is not good enough, too tied to Pax Runner underneath
+* Container restart policies (requested feature) hard to integrate into current abstraction
+* No "plumping" layer. Not really made to use outside of JUnit (while preserving all features)
+* Need to offer Native Container (OSGi Launcher API 4.2.x)
+* Need to offer a remote container, so one can run tests "on devices"
+
+This was enough reson to call this beast 2.0.
+
+Because Git/GitHub is a hip place to be and "maybe is the future of OPS4J":http://www.ops4j.org, i put the sources "here":http://github.com/okidokiteam/exxam .
+
+h2. Pax Exam 2 vs. Exxam 
 
 At OPS4J, Pax Exam will stay Pax Exam. In order to not confuse the OPS4J based development and ongoing releases with commercially supported okidokiteam releases the whole Pax Exam 2 stack emerges as Exxam over here at okidokiteams' Github repository. 
 
-Exxam 2 is currently on github only and prerequisite many smaller milestoners throughout 2010. License keeps being ASL2.0.
-Once Exxam 2 stabilizes / close to final release (lets call those release candidates), the codebase will committed back to ops4j repositories. By that time, OPS4J should have made his move to GIT, if the community agrees. But recent talks with Peter Neubauer reveil that its very likely that OPS4J projects will support being hosted on Github.com at least as a seccond valid option next to the hosted SVN Repository.
+Exxam is currently on github only and prerequisite many smaller milestoners throughout 2010. License keeps being ASL2.0.
+The codebase will committed back to ops4j repositories after 2.0 has been released. By that time, OPS4J could have made his move to GIT, if the community agrees. But recent talks with Peter Neubauer reveil that its very likely that OPS4J projects will support being hosted on Github.com at least as a seccond valid option next to the hosted SVN Repository.
 
-h2. Exxam 2 Milestone 1
 
-To get the train going, there will be many 
+h2. Exxam Milestones
+
+To get the train going, there will be many Milestone releases soon. This will be the time for people and contributors to step up.
 
 

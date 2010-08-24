@@ -1,0 +1,12 @@
+---
+layout: post
+title: Pax Exam 1.2.1 Released
+---
+
+h1. {{ page.title }}
+
+p(meta). August, 13th 2010 - Hannover, Germany
+
+"Pax Exam":http://paxexam.ops4j.org 1.2.1 has been released.
+
+This release is a bugfix release of the 1.2.x branch (current stable) and recommended for all current and new users to Pax Exam 1.2.
