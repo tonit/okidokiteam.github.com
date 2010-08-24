@@ -9,7 +9,7 @@ p(meta). August 2010 - Chatham, USA
 
 h2. Some history
 
-"OPS4J":http://ops4j.org is a well known Open Source community site with more than 100 committers over 15 projects. 
+"OPS4J":http://ops4j.org is a well known Open Source community site with more than over 20 Open Source Projects.
 In 2008 a new project in the so called "pax" stack opened its gates: Pax Drone. 
 
 It built to let us use "Pax Runner":http://paxrunner.ops4j.org right inside a JUnit Instance and let tests being wrapped into an "on-the-fly" bundle, so they can be injected and accessed inside this "Pax Runner":http://paxrunner.ops4j.org container.

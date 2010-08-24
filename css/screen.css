@@ -101,7 +101,7 @@ ul.posts {
 }
 
   .site .title a {
-    color: #a00;
+    color: black;
     text-decoration: none;
   }
 
@@ -113,7 +113,7 @@ ul.posts {
  }
 
   .site .title a:hover {
-    color: black;
+    color: #a00;
   }
 
   a.extra {
