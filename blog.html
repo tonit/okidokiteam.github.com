@@ -2,27 +2,3 @@
 layout: default
 title: okidokiteam
 ---
-
-<div id="home">
-  <h1>News</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  
-  <h1>Interviews, Talks, Etc</h1>
-  <ul class="posts">
-    <li><span>27 Feb 2010</span> &raquo; <a href="http://www.slideshare.net/tonimenzel/pax-exam-2">JAX London: Pax Exam 2.0 Preview</a></li>
-    <li><span>14 Nov 2009</span> &raquo; <a href="http://www.slideshare.net/tonimenzel/osgi-testing-pax-exam">Devoxx: Testing OSGi</a></li>
-    <li><span>12 May 2009</span> &raquo; <a href="http://www.slideshare.net/tonimenzel/ops4j-pax-tools-kickstart-your-osgi-adventure">Jazoon: Pax OSGi Tooling from OPS4J</a></li>
-  </ul>
-  
-  <h1>Featured Open Source Projects</h1>
-  <ul class="posts">
-    <li><a href="/projects/exxam.html">Pax Exam:</a> Testing Framework for OSGi based Projects including Android support.</li>
-    <li><a href="/projects/gouken.html">Gouken:</a> Create standalone custom osgi assemblies with daemon support.</li>
-    <li><a href="/projects/ace.html">Apache ACE:</a> OSGi Provisioning solution.</li>
-  </ul>
-</div>
-  

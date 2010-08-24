@@ -17,7 +17,7 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  font-family: Verdana,Arial,sans-serif; font-size: 1.0em;
   *font-size: small;
   text-align: center;
 }
@@ -43,7 +43,7 @@ a:hover {
 }
 
 a:visited {
-  color: #a0a;
+  color: #00a;
 }
 
 table {
@@ -56,6 +56,10 @@ table {
 /* Home
 /*
 /*****************************************************************************/
+img {
+	margin: 5px 5px 5px 5px;
+	float: bottom;
+}
 
 ul.posts {
   list-style-type: none;
@@ -68,7 +72,6 @@ ul.posts {
 
   ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
   }
 
@@ -79,9 +82,9 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 110%;
+  font-size: 100%;
   text-align: justify;
-  width: 60em;
+  width: 50em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -99,8 +102,9 @@ ul.posts {
 
  .site .title a.logo
  {
-	font-size: 28px;
+	font-size: 58px;
     font-family: 'Lobster';	
+	text-shadow: 0px 10px 0px rgba(255,255,255,1.0);
  }
 
   .site .title a:hover {
@@ -124,7 +128,6 @@ ul.posts {
   .site .footer {
     font-size: 80%;
     color: #666;
-    border-top: 4px solid #eee;
     margin-top: 2em;
     overflow: hidden;
   }
