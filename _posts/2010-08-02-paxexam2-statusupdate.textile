@@ -5,14 +5,21 @@ title: Pax Exam 2 Status Update
 
 h1. {{ page.title }}
 
-p(meta). 2 August 2010 - Hannover
+p(meta). August 2010 - Chatham, USA / Hannover, Germany
 
-h2. Origins
+h2. Foreword
 
 "OPS4J":http://ops4j.org is a well known Open Source community site with more than 100 committers over 15 projects. In 2008 a new project in the so called "pax" stack opened its gates: Pax Drone. 
 
-h2. New Test Runner Independ API
+h2. Pax Exam 2 vs. Exxam
 
-New Raw API
-<script src="http://gist.github.com/505533.js?file=paxexam-rawapi.java"></script>
+At OPS4J, Pax Exam will stay Pax Exam. In order to not confuse the OPS4J based development and ongoing releases with commercially supported okidokiteam releases the whole Pax Exam 2 stack emerges as Exxam over here at okidokiteams' Github repository. 
+
+Exxam 2 is currently on github only and prerequisite many smaller milestoners throughout 2010. License keeps being ASL2.0.
+Once Exxam 2 stabilizes / close to final release (lets call those release candidates), the codebase will committed back to ops4j repositories. By that time, OPS4J should have made his move to GIT, if the community agrees. But recent talks with Peter Neubauer reveil that its very likely that OPS4J projects will support being hosted on Github.com at least as a seccond valid option next to the hosted SVN Repository.
+
+h2. Exxam 2 Milestone 1
+
+To get the train going, there will be many 
+
 
