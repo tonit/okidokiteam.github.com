@@ -177,8 +177,17 @@
 <a href="http://github.com/okidokiteam"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork okidokiteam on GitHub" /></a>
 -->
 
-<!-- Google Analytics -->
-<!-- Google Analytics end -->
-
+<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+      change the UA-XXXXX-X to be your site's ID -->
+ <script>
+  var _gaq = [['_setAccount', 'UA-2505989-5'], ['_trackPageview']];
+  (function(d, t) {
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.async = true;
+   g.src = '//www.google-analytics.com/ga.js';
+   s.parentNode.insertBefore(g, s);
+  })(document, 'script');
+ </script>
 </body>
 </html>
