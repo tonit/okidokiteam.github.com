@@ -10,7 +10,11 @@ p(meta). August 2010 - Chatham, USA ( last updated: August, 24th, 2010 )
 h2. Some history
 
 "OPS4J":http://ops4j.org is a well known Open Source community site with more than over 20 Open Source Projects.
-In 2008 a new project in the so called "pax" stack opened its gates: Pax Drone. 
+OPS4J stands for Open Participation Software which refers to its selling: the unqiue contribution model that "everyone is a committer by default".
+The community hosts Java Projects from many different areas - but the strongest part is probably the "OSGi":http://osgi.org stack, which is also known at the "PAX" Stack.
+Projects like "Pax Runner":http://paxrunner.ops4j.org, "Pax Construct":http://paxconstruct.ops4j.org and "Pax Web":http://paxweb.ops4j.org are pretty well known in the "OSGi":http://osgi.org world.
+
+In 2008 a new project in PAX stack opened its gates: Pax Drone.
 
 It has been built to let us use "Pax Runner":http://paxrunner.ops4j.org right inside a JUnit Instance and let tests being wrapped into an "on-the-fly" bundle, so they can be injected and accessed inside this "Pax Runner":http://paxrunner.ops4j.org container.
 The Term "Drone" referes to the thing that is being made out of your test. It is a "drone" inside a configured (started and stopped while JUNit runs) system.
@@ -21,14 +25,14 @@ The latest Pax Exam Release is 1.2.1.
 
 h2. Early Pax Exam 2 Plan
 
-In winter of 2009/2010 i chose to cut the current trunk (at time of the 1.2.0 release) in order to start working on greater overhaul on GitHub.
+In winter of 2009/2010 i chose to cut the current trunk (at time of the 1.2.0 release) in order to start working on greater overhaul on "GitHub":http://github.com .
 Technical reasons for cutting a 2.0.. instead of lets say a 1.3 are (amongst others):
-* Current implementation is tight too much to JUnit4
-* TestContainer abstraction is not good enough, too tied to Pax Runner underneath
-* Container restart policies (requested feature) hard to integrate into current abstraction
-* No "plumping" layer. Not really made to use outside of JUnit (while preserving all features)
-* Need to offer Native Container (OSGi Core Specification 4.2 Launcher API )
-* Need to offer a remote container, so one can run tests "on devices"
+* Current implementation is tied too much to JUnit4
+* TestContainer abstraction is not good enough, too close to Pax Runner underneath
+* Container restart policies (requested feature) are hard to integrate into current abstraction
+* No "plumbing" layer. Not really made to use outside of JUnit ( porcelain ) Side note: "terms are borrowed form the Git(1) manual":http://www.kernel.org/pub/software/scm/git/docs/
+* Want to offer Native Container (OSGi Core Specification 4.2 Launcher API )
+* Want to offer a remote container, so one can run tests "on devices"
 
 This was enough reason to call this beast 2.0.
 
@@ -36,10 +40,10 @@ Because Git/GitHub is a hip place to be and "maybe is the future of OPS4J":http:
 
 h2. Pax Exam 2 vs. Exxam 
 
-At OPS4J, Pax Exam will stay Pax Exam. In order to not confuse the OPS4J based development and ongoing releases with commercially supported okidokiteam releases the whole Pax Exam 2 stack emerges as Exxam over here at okidokiteams' Github repository. 
+At "OPS4J":http://ops4j.org, "Pax Exam":http://paxexam.ops4j.org will stay "Pax Exam":http://paxexam.ops4j.org. In order to not confuse the OPS4J based development and ongoing releases with commercially supported okidokiteam releases the whole Pax Exam 2 stack emerges as Exxam over here at okidokiteams' Github repository. 
 
 Exxam is currently on github only and prerequisite many smaller milestoners throughout 2010. License keeps being ASL2.0.
-The codebase will committed back to ops4j repositories after 2.0 has been released. By that time, OPS4J could have made his move to GIT, if the community agrees. But recent talks with Peter Neubauer reveil that its very likely that OPS4J projects will support being hosted on Github.com at least as a seccond valid option next to the hosted SVN Repository.
+The codebase will be committed back to the OPS4J repositories after 2.0 has been released. By that time, OPS4J could have made his move to GIT, if the community agrees. Recent chats with "Peter Neubauer":http://wiki.ops4j.org/display/~peter@neubauer.se/Peter+Neubauers+Home+at+OPS4J reveiled that its very likely that "OPS4J":http://ops4j.org projects will support being hosted on "Github.com":http://github.com at least as a seccond valid option next to the hosted "SVN Repository":http://scm.ops4j.org/repos/ops4j/ . Which is a cool thing to look forward to!
 
 
 h2. Exxam Milestones
