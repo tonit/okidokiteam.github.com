@@ -17,7 +17,7 @@ html, body {
 
 body {
   background-color: white;
-  font-family: Verdana,Arial,sans-serif; font-size: 1.0em;
+  font-family: Verdana,Arial,sans-serif; font-size: 0.8em;
   *font-size: small;
   text-align: center;
 }
@@ -40,7 +40,7 @@ p {
 }
 
 a {
-  color: #00a;
+  color: black;
 }
 
 a:hover {
@@ -48,7 +48,7 @@ a:hover {
 }
 
 a:visited {
-  color: #00a;
+  color: black;
 }
 
 table {
@@ -64,6 +64,7 @@ table {
 img {
 	margin: 5px 5px 5px 5px;
 	float: bottom;
+	border: 0;
 }
 
 ul.posts {
