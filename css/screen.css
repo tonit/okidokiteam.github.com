@@ -54,7 +54,14 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+  width: 100%;
+  margin: 10px 10px 10px 10px;
 }
+
+td {
+	padding: 5px;
+}
+
 
 /*****************************************************************************/
 /*
@@ -98,7 +105,7 @@ ul.posts {
 .title {
   color: #a00;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
 }
 
   .site .title a {

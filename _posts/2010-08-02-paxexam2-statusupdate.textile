@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Pax Exam 2 Status Update
+title: Pax Exam 2.0 Status Update
 ---
 
 h1. {{ page.title }}
 
-p(meta). August 2010 - Chatham, USA
+p(meta). August 2010 - Chatham, USA ( last updated: August, 24th, 2010 )
 
 h2. Some history
 
@@ -27,10 +27,10 @@ Technical reasons for cutting a 2.0.. instead of lets say a 1.3 are (amongst oth
 * TestContainer abstraction is not good enough, too tied to Pax Runner underneath
 * Container restart policies (requested feature) hard to integrate into current abstraction
 * No "plumping" layer. Not really made to use outside of JUnit (while preserving all features)
-* Need to offer Native Container (OSGi Launcher API 4.2.x)
+* Need to offer Native Container (OSGi Core Specification 4.2 Launcher API )
 * Need to offer a remote container, so one can run tests "on devices"
 
-This was enough reson to call this beast 2.0.
+This was enough reason to call this beast 2.0.
 
 Because Git/GitHub is a hip place to be and "maybe is the future of OPS4J":http://www.ops4j.org, i put the sources "here":http://github.com/okidokiteam/exxam .
 
@@ -45,5 +45,8 @@ The codebase will committed back to ops4j repositories after 2.0 has been releas
 h2. Exxam Milestones
 
 To get the train going, there will be many Milestone releases soon. This will be the time for people and contributors to step up.
+
+Looking forward to that,
+Toni Menzel
 
 
