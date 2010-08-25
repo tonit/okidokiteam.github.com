@@ -47,6 +47,6 @@ h2. Exxam Milestones
 To get the train going, there will be many Milestone releases soon. This will be the time for people and contributors to step up.
 
 Looking forward to that,
-Toni Menzel
+Toni
 
 
