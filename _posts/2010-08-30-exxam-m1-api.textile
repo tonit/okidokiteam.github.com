@@ -1,0 +1,38 @@
+---
+layout: post
+title: Exxam 2 Milestone 1 API Sneak Preview
+---
+
+h1. {{ page.title }}
+
+p(meta). August, 30th 2010 - Hannover, Germany
+
+As promissed, we will start rolling out milestones of Exxam with some documentation so it can be source of hopefully fruity Open Source discussions.
+In the first release, i want to give some focus to the low level api, that pretty much is a complete rewrite compared to 1.x.
+
+The main goals are:
+- Have a solid api to drive the core business of Exam
+- Don't rely on JUnit or any other Test Framework
+- Must support low level control over probe creation
+- Must support low level control over container instantiation
+
+Below you see two code snippets that show the current API.
+As this is the foundation of anything more (JUnit porcelain API), its clear that this is of importance.
+
+h2. Unmanaged Plumbing API
+
+This is about aquiring a TestContainerFactory, using that factory to parse out the concrete TestContainers (hence, a configuration might configure to use felix and equinox for example), making a probe using "ProbeBuilder":http://github.com/okidokiteam/exxam/tree/master/core/pax-exam-spi/src/main/java/org/ops4j/pax/exam/spi/probesupport and finally launching the test after installing it.
+
+<script src="http://gist.github.com/555304.js?file=ExxamMinimalPlumbingAPI.java"></script>
+
+h2. Managed Plumbing API
+
+Additionally, it was pretty clear that this whole "container creation control" needs a higher level control as well.
+This is what those "ExamReactor":http://github.com/okidokiteam/exxam/blob/master/core/pax-exam-spi/src/main/java/org/ops4j/pax/exam/spi/ExxamReactor.java is all about.
+It lets you control all the other parts, but takes away the low level container re-use thing.
+Because this is going to be pretty much re-used by all higher level (porcelain) API.
+
+Please note that the Reactor shields away the use of TestContainerFactory. It pretty much controls the workflow instead of you doing it.
+
+<script src="http://gist.github.com/555312.js?file=ExxamManagedPlumbingAPI.java"></script>
+
