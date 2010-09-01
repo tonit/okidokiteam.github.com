@@ -1,0 +1,21 @@
+---
+layout: post
+title: Exxam 2 Milestone Remote Container Sneak Preview
+---
+
+h1. {{ page.title }}
+
+p(meta). September, 1st 2010 - Hannover, Germany
+
+h2. Introducing Remote Test Containers
+
+Petty early this year, there was already one feature in Exxam 2 that was going to be pretty interesting, so it was basically the basis of any refactoring work that was done in the Exxam2 Branch on Github: Remote Test Containers.
+
+So, infact, right before the "JAX 2010 London presentation":http://slideshare.net i had a working demo that showcasts the idea.
+
+Just have a look at the video below. The API might have changed meanwhile, but i thought its worthwhile to link here, somehow to tease whats going to come.
+
+h2. Video on Vimeo
+
+<iframe src="http://player.vimeo.com/video/9070088" width="400" height="300" frameborder="0"></iframe><p><a href="http://vimeo.com/9070088">Pax Exam 2 Sneak Preview 1</a> from <a href="http://vimeo.com/user3066742">Toni Menzel</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
