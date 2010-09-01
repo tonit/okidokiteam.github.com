@@ -44,7 +44,7 @@ p {
 }
 
 a {
-  color: #a00;
+  color: #336699;
 }
 
 a:hover {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 a:visited {
-  color: #a00;
+  color: #336699;
 }
 
 table {
@@ -101,7 +101,7 @@ ul.posts {
 .site {
   font-size: 100%;
   text-align: justify;
-  width: 50em;
+  width: 700px;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
